@@ -7,6 +7,7 @@
 - 🎨 **现代化 UI**: 使用 React + Ant Design 构建的全新界面
 - 🔐 **完整认证系统**: JWT 认证,支持用户管理和权限控制
 - 📊 **实时监控**: WebSocket 实时推送构建日志和状态
+- 📈 **数据可视化**: 构建统计图表,多维度数据分析
 - 🚀 **高性能**: 基于 TypeScript 开发,类型安全且易于维护
 - 📱 **响应式设计**: 支持桌面端和移动端访问
 - 🔌 **易于扩展**: 清晰的架构设计,便于添加新功能
@@ -40,8 +41,8 @@ npm run dev
 
 ### 访问应用
 
-- 前端: http://localhost:3000
-- 后端 API: http://localhost:4000
+- 前端: http://localhost:5173
+- 后端 API: http://localhost:3000
 - 默认账号: `admin` / `admin123`
 
 ## 📚 文档
@@ -49,6 +50,7 @@ npm run dev
 - [完整开发指南](./DEVELOPMENT_GUIDE.md) - 15000+ 字详细教程
 - [项目结构说明](./FILE_STRUCTURE.md)
 - [项目总结](./PROJECT_SUMMARY.md)
+- [统计功能文档](./FEATURE_STATISTICS.md) - 📊 新增!
 
 ## 🏗️ 技术栈
 
@@ -63,10 +65,11 @@ npm run dev
 - Ant Design UI 组件库
 - React Query 数据管理
 - Zustand 状态管理
+- Recharts 图表库
 
 ## 🎯 核心功能
 
-### 已实现
+### 已实现 ✅
 - ✅ 用户认证和授权
 - ✅ 任务列表查看
 - ✅ 触发构建
@@ -74,12 +77,34 @@ npm run dev
 - ✅ 构建日志查看
 - ✅ 任务创建和删除
 - ✅ WebSocket 实时通信
+- ✅ **构建统计图表** 📊 (新增)
+  - 仪表盘概览
+  - 构建成功率统计
+  - 构建耗时趋势
+  - 状态分布饼图
+  - 时间序列分析
 
-### 待开发
+### 待开发 ⏳
+- ⏳ 暗色主题
+- ⏳ Redis 缓存
 - ⏳ Pipeline 可视化编辑器
-- ⏳ 构建参数配置界面
-- ⏳ 通知系统
-- ⏳ 数据统计图表
+- ⏳ 构建队列管理
+- ⏳ 节点管理
+
+## 📊 统计功能预览
+
+新增的统计功能包括:
+- **仪表盘概览**: 总任务数、构建总数、成功率、正在构建数、最近失败数
+- **任务详细统计**: 成功/失败次数、平均构建时长、趋势分析
+- **可视化图表**: 饼图、折线图、柱状图等多种图表类型
+- **实时更新**: 仪表盘每30秒自动刷新
+
+详见 [FEATURE_STATISTICS.md](./FEATURE_STATISTICS.md)
+
+## 🔗 相关链接
+
+- GitHub仓库: https://github.com/PrettyKing/jenkins-custom-platform
+- 问题反馈: https://github.com/PrettyKing/jenkins-custom-platform/issues
 
 ## 📄 License
 
