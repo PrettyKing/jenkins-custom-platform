@@ -7,6 +7,7 @@ import { Server as SocketIOServer } from 'socket.io';
 // 导入路由
 import authRoutes from './routes/auth.routes';
 import jobRoutes from './routes/job.routes';
+import statisticsRoutes from './routes/statistics.routes';
 
 // 导入中间件
 import { notFound, errorHandler } from './middleware/error.middleware';
@@ -70,6 +71,7 @@ app.get('/health', async (req, res) => {
 // API 路由
 app.use('/api/auth', authRoutes);
 app.use('/api/jobs', jobRoutes);
+app.use('/api/statistics', statisticsRoutes);
 
 // WebSocket 连接处理
 io.on('connection', (socket) => {
